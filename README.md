@@ -1,5 +1,5 @@
 ---
-title: Customize existing GraphQL API / Add a field
+title: Sea of GraphQL / Pattern "BFF" / Only Copying Yelp
 published: false
 description: 
 tags: 
