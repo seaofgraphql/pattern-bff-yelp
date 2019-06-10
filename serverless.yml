@@ -1,0 +1,26 @@
+# serverless.yml
+
+service: seaofgraphql-pattern-bff-yelp
+provider:
+  name: aws
+  runtime: nodejs8.10
+  # iamRoleStatements:
+  # - Effect: Allow
+  #   Action:
+  #     - lambda:InvokeFunction
+  #   Resource: "*"
+functions:
+  graphql:
+    # this is formatted as <FILENAME>.<HANDLER>
+    handler: handler.graphqlhandler
+    events:
+    - http:
+        path: graphql
+        method: post
+        cors: true
+    - http:
+        path: graphql
+        method: get
+        cors: true
+plugins:
+  - serverless-offline
