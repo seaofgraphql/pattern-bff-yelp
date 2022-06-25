@@ -8,7 +8,7 @@
     "apollo-server-lambda": "^2.4.8",
     "dotenv": "^8.0.0",
     "graphql": "^14.2.1",
-    "node-fetch": "^2.5.0",
+    "node-fetch": "^2.6.7",
     "serverless-offline": "^4.10.0"
   }
 }
